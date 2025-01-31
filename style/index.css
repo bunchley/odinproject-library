@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* dark green: #3b4c2a,
+    medium dark green -- #03321c,
+   lighter-green--: #667540,
+    med green: #93ad69,
+    light green: #d0d7a2,
+   cream--: #DCCEB9,
+    pink --: #d6b8c7,
+    maroon --: #6d0d18,
+    black --: #111111,
+    red --: #8d0d1b */
+
+body {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  /* font-weight: ; */
+  font-style: normal;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 250px 1fr;
+  grid-template-columns: 1fr;
+  /* justify-items: center; */
+}
+.header {
+  background-color: #3b4c2a;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  box-shadow: 5px;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.icon {
+  grid-column: 1;
+}
+.title {
+  grid-column: 2;
+  font-size: 45px;
+  color: #d0d7a2;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+.newBook {
+  grid-column: 3;
+}
+
+.main {
+  grid-row: 2;
+  background-color: #dcceb9;
+}
+.icon > img {
+  height: 150px;
+}
+
+.newBook > a:link,
+.newBook > a:visited {
+  background-color: #93ad69;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

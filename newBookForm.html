@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/newBookForm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+IN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/dark-green-book-icon.svg" />
+    <title>Odin Library</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="icon">
+          <img
+            src="./images/dark-green-book-icon.svg"
+            alt="Dark Green Book Icon"
+          />
+        </div>
+        <div class="title">Best Books So Far</div>
+        <div class="newBook">
+          <!-- <a href="./newBookForm.html" class="button">Add New Book</a> -->
+        </div>
+      </div>
+      <div class="main">
+        <form action="">
+          <label for="title">Title</label>
+          <input type="text" name="title" class="book-title" />
+          <label for="author">Author</label>
+          <input type="text" name="author" class="author" />
+          <label for="summary">Summary</label>
+          <input type="text" name="summary" class="summary" />
+          <label for="cover-image">Cover Image</label>
+          <input type="url" name="cover-image" class="cover-image" />
+          <label for="rating">Rating</label>
+          <input type="range" name="rating" class="rating" min="1" max="5" />
+          <p class="ratingValue">3</p>
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </div>
+      <script src="./src/newBookForm.js"></script>
+    </div>
+  </body>
+</html>
