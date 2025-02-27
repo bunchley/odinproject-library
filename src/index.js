@@ -28,11 +28,11 @@ Book.prototype.createBookCard = function () {
   newCard.classList.add("card");
   const cardTitle = document.createElement("div");
   cardTitle.classList.add("card-title");
-  cardTitle.textContent = `Title:  ` + `${this.title}`;
+  cardTitle.textContent = `${this.title}`;
   newCard.appendChild(cardTitle);
   const cardAuthor = document.createElement("div");
   cardAuthor.classList.add("card-author");
-  cardAuthor.textContent = `Author:  ` + `${this.author}`;
+  cardAuthor.textContent = `By:  ` + `${this.author}`;
   newCard.appendChild(cardAuthor);
 
   const cardRead = document.createElement("select");

@@ -52,7 +52,9 @@ body {
   grid-row: 2;
 }
 button,
-.add-book {
+.add-book,
+#submit,
+.card-remove {
   margin-top: 20px;
   padding: 10px;
   padding-top: 15px;
@@ -63,12 +65,23 @@ button,
   border: none;
   box-shadow: 5px 5px;
 }
+.add-book,
+#submit {
+  background-color: #c911ba;
+}
+
+.card-remove,
+.close-button {
+  background-color: #e2f1f2;
+}
 
 .main {
   grid-row: 2;
   /* background-color: #dcceb9; */
   display: flex;
   gap: 28px;
+  flex-wrap: wrap;
+
   justify-content: center;
 }
 
@@ -90,8 +103,19 @@ button,
   box-shadow: 5px 5px;
   padding: 15px;
 }
-.card-image {
-  height: 300;
+.card-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.card-author {
+  padding-bottom: 10px;
+}
+.card-read {
+  background-color: #eccddd;
+  height: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .modal-container {
   position: fixed;
