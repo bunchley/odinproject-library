@@ -18,6 +18,7 @@ body {
   font-optical-sizing: auto;
   /* font-weight: ; */
   font-style: normal;
+  background-color: white;
 }
 
 .layout {
@@ -27,7 +28,7 @@ body {
   /* justify-items: center; */
 }
 .header {
-  background-color: #3b4c2a;
+  /* background-color: #3b4c2a; */
   grid-row: 1;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -37,36 +38,92 @@ body {
   justify-items: center;
 }
 
-.icon {
-  grid-column: 1;
-}
 .title {
   grid-column: 2;
-  font-size: 45px;
-  color: #d0d7a2;
+  font-size: 49px;
+  color: #8a0c80;
   font-family: "Playwrite IN", serif;
   font-optical-sizing: auto;
   font-weight: 100px;
   font-style: normal;
 }
-.newBook {
-  grid-column: 3;
+.add {
+  grid-column: 2;
+  grid-row: 2;
+}
+button,
+.add-book {
+  margin-top: 20px;
+  padding: 10px;
+  padding-top: 15px;
+  font-family: "Josefin Sans", serif;
+  /* font-weight: bold; */
+  font-size: 25px;
+  background-color: #c911ba;
+  border: none;
+  box-shadow: 5px 5px;
 }
 
 .main {
   grid-row: 2;
-  background-color: #dcceb9;
-}
-.icon > img {
-  height: 150px;
+  /* background-color: #dcceb9; */
+  display: flex;
+  gap: 28px;
+  justify-content: center;
 }
 
 .newBook > a:link,
 .newBook > a:visited {
-  background-color: #93ad69;
+  /* background-color: #93ad69; */
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.card {
+  border: 2px solid black;
+  /* background-color: #93ad69; */
+  height: 300px;
+  width: 200px;
+  box-shadow: 5px 5px;
+  padding: 15px;
+}
+.card-image {
+  height: 300;
+}
+.modal-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+dialog#modal {
+  box-shadow: 5px 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-48%, -49%);
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  height: 400px;
+  width: 250px;
+  box-shadow: 5px 5px;
+}
+label {
+  padding-top: 30px;
+}
+p {
+  margin: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+::backdrop {
+  background-image: linear-gradient(#808080, #b2beb5);
+  opacity: 80%;
 }
