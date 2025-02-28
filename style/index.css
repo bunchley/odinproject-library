@@ -2,21 +2,10 @@
   padding: 0;
   margin: 0;
 }
-/* dark green: #3b4c2a,
-    medium dark green -- #03321c,
-   lighter-green--: #667540,
-    med green: #93ad69,
-    light green: #d0d7a2,
-   cream--: #DCCEB9,
-    pink --: #d6b8c7,
-    maroon --: #6d0d18,
-    black --: #111111,
-    red --: #8d0d1b */
 
 body {
   font-family: "Josefin Sans", serif;
   font-optical-sizing: auto;
-  /* font-weight: ; */
   font-style: normal;
   background-color: white;
 }
@@ -25,10 +14,8 @@ body {
   display: grid;
   grid-template-rows: 250px 1fr;
   grid-template-columns: 1fr;
-  /* justify-items: center; */
 }
 .header {
-  /* background-color: #3b4c2a; */
   grid-row: 1;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -59,7 +46,6 @@ button,
   padding: 10px;
   padding-top: 15px;
   font-family: "Josefin Sans", serif;
-  /* font-weight: bold; */
   font-size: 25px;
   background-color: #c911ba;
   border: none;
@@ -77,17 +63,15 @@ button,
 
 .main {
   grid-row: 2;
-  /* background-color: #dcceb9; */
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
-
+  font-size: 26px;
   justify-content: center;
 }
 
 .newBook > a:link,
 .newBook > a:visited {
-  /* background-color: #93ad69; */
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -97,9 +81,8 @@ button,
 
 .card {
   border: 2px solid black;
-  /* background-color: #93ad69; */
   height: 300px;
-  width: 200px;
+  width: 300px;
   box-shadow: 5px 5px;
   padding: 15px;
 }

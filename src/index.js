@@ -83,13 +83,17 @@ form.addEventListener("submit", (event) => {
   const newBook = new Book(title.value, author.value, pages.value, read.value);
   myLibrary.push(newBook);
   form.reset();
-  console.log(myLibrary);
   newBookModal.close();
   displayLibrary();
 });
 
-const book1 = new Book("Crime and Punnishment", "Dostoyevsky", 599, "Read");
-const book2 = new Book("Crime and Punnishment", "Dostoyevsky", 601, "Read");
+const book1 = new Book("Crime and Punnishment", "Dostoevsky", 527, "Read");
+const book2 = new Book(
+  "Zen and the Art of Motorcycle Maintenance",
+  "Pirsig",
+  418,
+  "Read"
+);
 myLibrary.push(book1);
 myLibrary.push(book2);
 
